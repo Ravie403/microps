@@ -1,0 +1,9 @@
+name: microps
+services:
+  os:
+    build: ./
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    volumes:
+      - ./:/code
