@@ -2,6 +2,7 @@ name: microps
 services:
   os:
     build: ./
+    tty: true
     cap_add:
       - NET_ADMIN
     privileged: true
